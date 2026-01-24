@@ -98,6 +98,8 @@ const loginUser = asyncHandler ( async (req, res) => {
   // send cookies and response
 
   const {email, username, password} = req.body
+  console.log(email);
+  
 
   if (!username && !email) {
     throw new ApiError(400, "Username and email are required")
@@ -144,7 +146,7 @@ const loginUser = asyncHandler ( async (req, res) => {
 
 })
 
-const logoutUser = asyncHandler (async () => {
+const logoutUser = asyncHandler (async (req, res) => {
   await User.findByIdAndUpdate(
     req.user._id, {
       $set: {
