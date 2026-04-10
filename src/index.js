@@ -3,10 +3,10 @@
 import dotenv from "dotenv";
 import connectDB from "./db/index.js";
 import { app } from "./app.js";
-
+import dns from "dns";
 dotenv.config({path: "./env"})
 
-
+dns.setServers(['1.1.1.1', '0.0.0.0']);
 connectDB()
 .then(()=>{
   app.on("error", (error)=>{

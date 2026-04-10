@@ -1,32 +1,40 @@
 {
-  "name": "backend-youtube",
+  "name": "youtube-backend",
   "version": "1.0.0",
-  "description": "a backend of youtube",
+  "description": "a basic app to deploy",
   "keywords": [
-    "javascript",
-    "node"
+    "node",
+    "youtube"
   ],
+  "homepage": "https://github.com/Jyotiyadav43/youtube-backend#readme",
+  "bugs": {
+    "url": "https://github.com/Jyotiyadav43/youtube-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jyotiyadav43/youtube-backend.git"
+  },
   "license": "ISC",
-  "author": "Jyoti Yadav",
+  "author": "jyoti yadav",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
-  "devDependencies": {
-    "nodemon": "^3.1.11",
-    "prettier": "^3.7.4"
-  },
   "dependencies": {
     "bcrypt": "^6.0.0",
-    "cloudinary": "^2.8.0",
+    "cloudinary": "^2.9.0",
     "cookie-parser": "^1.4.7",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.1.2",
+    "mongoose": "^9.2.3",
     "mongoose-aggregate-paginate-v2": "^1.1.4",
-    "multer": "^2.0.2"
+    "multer": "^2.1.0",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
   }
 }
